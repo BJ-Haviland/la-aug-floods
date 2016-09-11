@@ -99,21 +99,7 @@
 
     function makeMap(error, la, parish, hwm){
         
-        /*
-        var data = [];
-
-            hwm.forEach(function(emitter) {
-                data.push(Number(emitter.total_emissions));
-        });
-
-        var min = Math.min.apply(Math, data),
-              max = Math.max.apply(Math, data);
-
-        var radius = d3.scale.sqrt()
-            .domain([min, max])
-            .range([3, 20]);
-        */    
-
+        
         svg.append("g")
             .selectAll("path")
             .data(la.features)
@@ -166,4 +152,5 @@
  
 </script>
 </body>
+    
 </html>
